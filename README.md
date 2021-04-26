@@ -55,14 +55,16 @@ file of your Android application.
   Add it in your root build.gradle at the end of repositories:
   authToken added in the gradle.propeties
   ```yml
-      allprojects { repositories {
-google() jcenter() maven {
-url "https://jitpack.io" // this is required to define as a
-jetpack
-credentials { username authToken } // authToken which is shared in the SDK document
-}
-}
-}
+  allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url "https://jitpack.io" // this is required to define as a jetpack
+            credentials { username authToken } // authToken which is shared in the SDK document
+        }
+        }
+    }
 ```
 
 
@@ -98,12 +100,12 @@ Note :Make sure to use the init(application or activity context) method to initi
 ```yml
   setRT(VideoContentDTO contentDTO, IResponseHandler<String> iResponseHandler);  
 ```
-** VideoContentDTO
+## VideoContentDTO
 
 
 
 
-##All rights reserved 
+### All rights reserved 
 
    
 Important notice: The content in this document is for the use of the intended recipient only. If the recipient is not the intended recipient, please notify us immediately and remove/delete this document irretrievably from your physical and/ or electronic records.
