@@ -80,7 +80,7 @@ implementation 'org.bitbucket.onmobile-rbtsdk:onmo_dialer:release_x.y.z'
 
 
 
-### Initialize SDK
+## Initialize SDK
 
 To use ONMO Dialer SDK exposed methods you need initialize SDK with proper values as mentioned below.
 Add the following lines to initialize and run SDK:
@@ -105,7 +105,7 @@ you must initialize RTSdkClient with proper values as mentioned above section.
 ```
 Note :Make sure to use the init(application or activity context) method to initialize RTSdkClient.
 
-## VideoContentDTO
+### VideoContentDTO
 
 Video Content DTO contains details of the video file like id, title of the content, video file thumbnails and file or path of the video content. 
 
