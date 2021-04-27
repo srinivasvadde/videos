@@ -2,7 +2,7 @@
 ## Video Ringtone | RRBT
  Custome dialer for Android devices
 
-## screenshot below:
+## Screens 
 ![github](https://github.com/srinivasvadde/videos/blob/5d46a683a8275ac2b744b4313ffebe30b7c62256/Screenshot%202021-04-27%20at%205.20.55%20AM.png "github") 
 
 
@@ -37,7 +37,9 @@ E.g. To exclude 'androidx.appcompat:appcompat:1.1.0'
 ```
 
 ### Development
+
 ## Integrate
+
 The VideoRT SDK library can be integrated in any Android supported project by following steps mentioned in sections below. SDK handles the artifacts remotely and resolves the dependencies at build level in integrating environment. This is JitPack based private artifacts library.
 
 ## Authentication Token
@@ -67,7 +69,8 @@ file of your Android application.
 ```
 
 
-## Import SDK
+## import SDK
+
 To import the SDK file by adding the following dependency in the build.gradle file at the application level
 
 ```yml
@@ -77,9 +80,9 @@ implementation 'org.bitbucket.onmobile-rbtsdk:onmo_dialer:release_x.y.z'
 
 
 
-### Initialize and Run RBT SDK
+### Initialize SDK
 
-To run ONMO Dialer SDK, You must initialize RTSDKClient with proper values as mentioned below.
+To use ONMO Dialer SDK exposed methods you need initialize SDK with proper values as mentioned below.
 Add the following lines to initialize and run SDK:
 
 ```yml
@@ -94,14 +97,17 @@ Add the following lines to initialize and run SDK:
 
 
 ### Set Video RT/RRBT
-To call any exposed methoda, you must initialize RTSdkClient with proper values as mentioned above section.
-Note :Make sure to use the init(application or activity context) method to initialize RTSdkClient.
+To activate video RT need to invoke below exposed methods
+you must initialize RTSdkClient with proper values as mentioned above section.
+
 ```yml
   setRT(VideoContentDTO contentDTO, IResponseHandler<String> iResponseHandler);  
 ```
+Note :Make sure to use the init(application or activity context) method to initialize RTSdkClient.
+
 ## VideoContentDTO
 
-
+Video Content DTO contains details of the video file like id, title of the content, video file thumbnails and file or path of the video content. 
 
 
 ### All rights reserved 
